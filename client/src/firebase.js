@@ -5,14 +5,13 @@ import { initializeApp } from 'firebase/app';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAhF0cnUOLmpc0W-q0Tk3Q27oKsml2bgis",
-    authDomain: "mern-realstate-584b7.firebaseapp.com",
-    projectId: "mern-realstate-584b7",
-    storageBucket: "mern-realstate-584b7.appspot.com",
-    messagingSenderId: "41195210241",
-    appId: "1:41195210241:web:6072829ea026446669a200",
-    measurementId: "G-4EDWLP5VWQ"
-  };
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: 'mern-estate.firebaseapp.com',
+  projectId: 'mern-estate',
+  storageBucket: 'mern-estate.appspot.com',
+  messagingSenderId: '1078482850952',
+  appId: '1:1078482850952:web:28f19139ab77246602fb3d',
+};
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
